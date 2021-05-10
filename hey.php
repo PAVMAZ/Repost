@@ -17,7 +17,6 @@ function getUsers(): array
     for ($i = 0; $i < mysqli_num_rows($result); $i++) {
         $users[] = mysqli_fetch_assoc($result);
     }
-    
     return $users;
 }
 
